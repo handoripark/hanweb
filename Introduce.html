@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>wwf</title>
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+@keyframes fadein{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+
+
+header{
+  background-color: rgb(0, 0, 0);
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items:left;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0 48px;
+
+  transition: all 0.3s;
+}
+
+header.scrolled{
+  background-color: black;
+  height: 70px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+header nav{
+  flex: 1 0 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+
+header nav a{
+  margin: 0 0 0 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+    .in_main{
+        background-size:cover;
+        background-position: center;
+        background-image: url("https://i.postimg.cc/vZbj0R6N/anna-jimenez-calaf-PLOq7-Ouq0f-M-unsplash.jpg");
+        height: 500px;
+        position: relative;
+    }
+
+    .about{
+        position: absolute;
+        text-align: center;
+        margin-top: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .about h2{
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        margin-left: 660px;
+
+
+    }
+
+    .about h1{
+        font-size: 44px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        margin-left: 660px;
+
+    }
+
+    .story{
+        height: 800px;
+        background-color: white;
+        padding: 80px;
+
+    }
+
+    .story_txt{
+        width: 810px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .story_txt h1{
+        font-size: 36px;
+        font-weight: bold;
+
+    }
+
+
+    .story_txt h3{
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+    }
+
+    .story_txt h3 b{
+        color: rgb(255, 176, 50);
+
+
+    }
+
+    .story_txt p{
+        font-size: 14px;
+    }
+
+    .mission_txt{
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+    }
+
+    .mission h1{
+      text-align: center;
+      font-weight: bold;
+    }
+    div.photos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid rgba(255,255,255,0.3);
+    margin-left: 100px;
+    margin-bottom: 80px;
+    
+
+    }
+    div.photos div.photo-wrap{
+        width: 300px
+        
+    }
+
+div.photos img{
+    width:400px;
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 1450px;
+    top:0;
+    left:0;
+    box-shadow: 0 12px 12px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="https://i.postimg.cc/Wz5dKJnH/logo-s.png" alt="logo" width="60px">
+    </div>
+    <nav>
+      <a href="Introduce.html">Introduce</a>
+      <a href="active.html">Works</a>
+      <a href="#">Join in</a>
+      <a href="#">Story</a>
+      <a href="#">Results</a>
+      <a href="#">Donation</a>
+
+
+    </nav>
+  </header>
+
+  <div class="in_main">
+    <div class="about">
+        <h2>ABOUT US</h2>
+        <h1>기관소개</h1>
+    </div>
+  </div>
+
+  <div class="story">
+    <div class="story_txt">
+    <h1>WWF(세계자연기금)는?</h1>
+    <h3>세계 최대 비영리 자연보전기관 WWF(세계자연기금, WORLD WIDE FUND FOR NATURE)는
+        <b>1961년에 설립되었으며, 국제본부는 스위스 글랑에 위치해 있습니다.</b></h3>
+    <p>전 세계 100여 개 국가에서 600만 명 이상의 후원자들과 함께 활발히 활동하고 있는 WWF의 초창기
+        명칭은 “세계 야생동물 기금(WORLD WILDLIFE FUND)”이었으나, 해당 명칭이 기관의 활동 범위를 모두 반영하지 못한다는 판단하에 미국과 캐나다를 제외한 국가에서는 1986년 “세계자연기금(WORLD WIDE FUND FOR NATURE)”으로 공식 명칭을 변경하였습니다. 그러나 명칭 변경 후 15개 이상의 언어로
+        번역이 이루어지며 혼란이 생기자, 꾸준히 사용되어온 약자 WWF로 국제 명칭을 통일하기로 2001년
+        결정했습니다.
+        <br> <br>       
+        WWF는 다양한 이해관계자들의 기여와 협력의 힘을 매우 중요하게 생각합니다. 오늘날 세계가 직면하고 있는 복잡한 환경 문제는 우리 모두의 적극적인 동참이 필요하기 때문입니다. 해양과 기후·에너지, 산림,
+        담수, 야생동물, 식량 등 자연보전 전 영역에 걸쳐 활동하고 있는 WWF는 이에 대한 효과를 더욱 높이고
+        지속가능한 발전을 이루기 위해 각 분야의 전문가들을 비롯해 국제기구와 지역사회, 기업, 정부 및
+        시민단체와 파트너십을 형성하여 일하고 있습니다.
+        또한 WWF는 자연 서식지의 보전, 생물종 멸종 방지, 생산과 소비의 생태발자국 감소를 세부 목표로 두고 2030년까지 자연을 보전 및 회복시키고, 
+        2050년까지 지속가능하고 건강한 지구에서 사람과 자연이 조화롭게 살아갈 수 있는 미래를 만들고자 힘쓰고 있습니다.
+        <br><br>
+        WWF-KOREA(세계자연기금 한국본부)는 지난 2014년 공식 설립되었습니다. 한국 본부는 시민들의 기후위기 인식 제고를 위해 지구촌 전등 끄기 캠페인 
+        ‘어스아워(EARTH HOUR)’를 비롯하여 기업, 정부, 학계, 시민사회 등 각 분야의 전문가들과 파트너십을 형성했습니다. 그리고 현재까지 지속가능한 
+        비즈니스 모델 구축을 위한 각종 연구와 정책 제언, 소비자 캠페인 등을 함께 진행하고 있습니다. 뿐만 아니라 생물종 및 서식지 보전, 생산 방식의 
+        전환 등의 활동도 함께 수행하고 있으며, 점차 국내에서의 활동 분야와 범위를 넓히고 영향력을 키워가고 있습니다.
+        </p>
+    </div>
+  </div>
+
+  <div class="mission">
+    <h1>WWF미션</h1>
+    <div class="photxt">
+      <div class="photos">
+        <div class="photo-wrap">
+          <img src="https://i.postimg.cc/jd0YYKcS/jay-wennington-s-f-D5-Tpew2k-unsplash.jpg">
+          <img src="https://i.postimg.cc/4NbqCcnW/rachel-cook-m-Ocdke2-ZQo-E-unsplash.jpg">
+          <img src="https://i.postimg.cc/50K9SGWF/linnea-sandbakk-HQq-IOc8o-Yro-unsplash.jpg">
+        </div>
+        <div class="mission_txt">WWF는 지구의 자연환경이 파괴되는 것을 막고 사람과 자연이 조화를 이루며 살아가는 미래를
+          만들어가고자 합니다.<br>
+          <br>
+          이를 위해 생물 다양성을 보전하고 재생 가능한 자연자원을 지속가능하게 사용할 수 있도록 이끌며
+          환경오염 및 불필요한 소비를 줄이는 인식 개선 활동에 힘쓰고자 합니다.<br>
+          <br>
+          "WWF's mission is to stop the degradation of the planet’s natural environment and to
+          build a future in which humans live in harmony with nature, by: conserving the world's
+          biological diversity, ensuring that the use of renewable natural resources is sustainable
+          and promoting the reduction of pollution and wasteful consumption."
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <script src="intro.js"></script>
+</body>
